@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form태그
+        웹페이지에 입력폼을 만들 때 사용하는 태그
+        사용자에게 정보를 받아주는 태그
+        필수속성 2가지 : method(전달방식), action(전달위치)
+     -->
+
+     <!-- get = url을 통해서 데이터 전달(공개적 느낌)
+          post =  -->
+
+          <!-- # : 지금 여기로 보내겠다는 의미 (=공란) -->
+     <form method = "get" action = "#">
+        <h4> 입력 </h4>
+
+        <!-- input 태그 -->
+        <!-- name : 입력한 값을 구분하기 위해 이름을 지정 -->
+        <!-- placeholder : 미리보기 텍스트 -->
+        <!-- autofocus : 시작시 자동커서 설정  -->
+        <!-- value : 기본입력정보 설정 -->
+        <!-- readonly : 읽기 전용 (수정 불가능) -->
+        <!-- maxlength : 최대 글자수 제한 -->
+        아이디 : <input type="text" name = "id" autofocus>
+        <br>
+        비밀번호 : <input type="password" placeholder="비밀번호 입력" maxlength="10">
+        <br>
+        강의장 : <input type="text" name = "lec" value="K강의장" readonly>
+
+
+        <h4>선택</h4>
+
+        <!-- input 태그 타입 checkbox : 중복선택 가능
+             input 태그 타입 radio : 중복선택 불가능 -->
+
+
+        <!-- checkbox -->
+        <p>좋아하는 음료를 모두 골라주세요</p>
+
+        <input type="checkbox"> 아메리카노
+        <input type="checkbox"> 민트초코
+
+        <!-- radio -->
+        <!-- name을 설정하여 같은 분류임을 설정 -->
+        <!-- value를 통해 선택된 값이 어떤 값인지 설정 -->
+        <p>당신의 성별을 골라주세요</p>
+
+        <input type="radio" name = "gender" value="man"> 남성 
+        <input type="radio" name = "gender" value="woman"> 여성 
+
+
+        <br>
+        <br>
+
+        <!-- select 태그 -->
+        <span> 당신의 혈액형을 골라주세요</span>
+        <select>
+            <option value="A">A형</option>
+            <option value="B">B형</option>
+            <option value="O">O형</option>
+            <option value="AB">AB형</option>
+        </select>
+
+
+        <br><br>
+        <!-- 그 외 -->
+        <input type="file"><br>
+        <input type="color"><br>
+        <input type="number"><br>
+        <input type="text"><br>
+        <input type="range"><br>
+        <input type="date">
+        <input type="datetime-local">
+
+
+        <h4>제출 및 초기화</h4>
+
+        <!-- 제출되는 form 태그 시작~ 끝까지의 정보로 
+        제출버튼은 form 태그 내부에 존재해야함
+        -->
+        
+        <input type="submit" value="보내기">
+        <input type="reset" value="초기화하기">
+     </form>
+</body>
+</html>
