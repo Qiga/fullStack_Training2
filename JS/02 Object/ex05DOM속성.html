@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM property</title>
+</head>
+<body>
+    <div id="container">
+        <p>DOM 사용하기</p>
+    </div>
+    <button id = "textBtn">TEXT</button>
+    <button onclick="htmlFunc()" >HTML</button>
+    <!-- onclick : 클릭했을 때 일어날 함수 설정() -->
+
+    <script>
+        //div 요소에 접근하기 
+        let domVal = document.getElementById('container');
+
+        //버튼 클릭시 
+        //addEventListener ( 이벤트타입 , 이벤트핸들러 )
+        document.getElementById('textBtn').addEventListener('click', ()=>{
+            
+            console.log('text click');
+            let domText = document.getElementById('container').innerText;
+            console.log('내용만 : ', domText);
+            console.log('내용만2 : ', domVal.innerText);
+
+            domVal.innerText = 'JavaScript';
+        })
+
+        //HTML 버튼으로 요소와 태그 접근
+
+        const htmlFunc = ()=> {
+            console.log('html click');
+            domVal.innerHTML = '<h1>JavaScript</h1>'
+        };
+
+
+    </script>
+</body>
+</html>

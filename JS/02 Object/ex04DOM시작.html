@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM start</title>
+</head>
+<body>
+    <p id="pTag">DOM 사용하기</p>
+
+    <script>
+        //문서 - docu
+        //접근해서 .
+        //가져올거임 get
+        //요소를 Element
+        //아이디로  ById
+
+        // byid외에도 getElementsByName, getElementsByTagName, getElementsByClassName() 를 사용할 수 있다
+        // 이때, id는 고유라서 Element지만 다른건 s가 붙는다.
+        // == > So, 뒤에 세개는 HTMLCollection 객체로 반환된다.
+
+        let pEle = document.getElementById('pTag');
+
+        console.log(pEle);
+    </script>
+</body>
+</html>
