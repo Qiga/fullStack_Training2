@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <button>Click!</button>
+
+    <script>
+        //callback 함수 
+        //시스템에서 호출하는 방식 (명시적 호출 x)
+        //구조적으로는 함수 안에 파라미터로 함수가 들어간다
+        
+        //1. 이벤트 핸들러 (addEventListner(이벤트타입 , 로직 )):  특정 이벤트가 발생한 경우
+        // 버튼을 클릭했을 때 메시지를 출력하기
+        document.querySelector('button').addEventListener('click', ()=>{
+            console.log('클릭');
+        })
+
+        //2. 타임 핸들러 (setTimeout(타임핸들러, 시간정보)): 특정 시점에 도달 했을 때
+        //특정 시간이 지난 이후에 메시지를 출력 (1000 == 1초)
+        console.log('치즈');
+        console.log('고기');
+        setTimeout(() => {
+            console.log('집')
+        }, 2500);
+        console.log('밥');
+    </script>
+</body>
+</html>

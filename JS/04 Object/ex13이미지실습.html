@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://t1.daumcdn.net/cfile/tistory/99708B495D42B1BF02
+    " alt="" width="300px" id="imgId" class = "imgClass">
+
+    <br>
+
+    <button onclick="imgChange()">이미지 변경</button>
+
+
+    <script>
+        //버튼 클릭시 이미지 변경
+
+        
+        //이미지 요소 가져오기
+        let imgVal = document.getElementById('imgId');
+        let imgVal2 = document.getElementsByClassName('imgClass');
+        console.log(imgVal);
+        console.log(imgVal2[0]);
+
+        let imgVal3 = document.querySelector('img');
+        let imgVal4 = document.querySelector('#imgId');
+        let imgVal5 = document.querySelector('.imgClass');
+        let imgVal6 = document.querySelectorAll('img')[0];
+        let imgVal7 = document.querySelectorAll('.imgClass');
+        console.log(imgVal3);
+        console.log(imgVal4);
+        console.log(imgVal5);
+        console.log(imgVal6);
+        console.log(imgVal7[0]);
+        
+        const imgChange = ()=>{
+            console.log('click');
+            //이미지 요소.src = 바꿔줄 이미지 주소
+            if (imgVal.src === "https://t1.daumcdn.net/cfile/tistory/99708B495D42B1BF02"){
+            imgVal.src = 'https://t1.daumcdn.net/cfile/tistory/2756F14558794B371F'
+            }else imgVal.src ="https://t1.daumcdn.net/cfile/tistory/99708B495D42B1BF02"
+
+
+            //확장성을 고려해보기
+            
+        };
+    </script>
+</body>
+</html>

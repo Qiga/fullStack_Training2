@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery style</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <p> jQuery style </p>
+    <button> change </button>
+
+    <script>
+        //버튼 클릭 시 , p요소의 스타일 제어 !
+        $('button').click(()=>{
+            //스타일 제어
+
+            //한줄 씩 제어하기
+            // $('p').css('color', 'salmon');
+            // $('p').css('font-style', 'italic');
+            // $('p').css('background-color', 'lightgray');
+
+            // chain방식으로 입력 
+            // jQuery 방식은 다시 제어하는 대상을 return 하게 됨  
+            // -> 메소드를 계속해서 붙여넣는 chain방식사용이 가능함
+            // $('p').css('color', 'salmon')
+            //       .css('font-style', 'italic')
+            //       .css('background-color', 'lightgray');
+
+            // 객체로 입력
+            $('p').css({
+                'color':'salmon',
+                'font-style': 'italic',
+                'background-color': 'lightgray'
+            })
+        });
+
+
+    </script>
+</body>
+</html>

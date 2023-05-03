@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input실습</title>
+</head>
+<body>
+    
+    <h1> 입력한 값을 h1 태그로 출력해보기 </h1>
+
+    <input type="text" id = "inputText">
+    <button onclick="writeFunc()"> 출력 </button>
+
+    <!-- 공간 만들기 -->
+    <div id = "paper"> </div>
+
+    <script>
+        //write 변수 정의하기
+        const writeFunc = ()=> {
+            console.log('work');
+            // input접근하기
+            let textValue = document.getElementById("inputText");
+
+
+            // h1태그 출력
+            // 출력 공간 가져오기
+            // h1태그 기능을 넣어서 값 전달하기
+            document.getElementById("paper").innerHTML += `<h1> ${textValue.value} </h1>`;
+
+            // input태그 안을 비워주기
+        };
+    </script>
+</body>
+</html>

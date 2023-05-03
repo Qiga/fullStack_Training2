@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <div id = "num1">
+        <span> 2 </span>
+    </div>
+    <br> -->
+
+    <span id = "countNum">1</span>
+    <br>
+    <button id = "mbtn1">감소</button>
+
+<script>
+    // let number1 = document.getElementById("countNum").innerText;
+
+    document.getElementById("mbtn1").addEventListener('click', ()=>{
+        console.log('work');
+        let numberText = document.getElementById("countNum");
+        numberText.innerText = Number(numberText.innerText) -1;
+        console.log('감소');
+
+        // if( Number(number1) > 0 ){
+        //     number1 = Number(number1)-1;
+        // }
+
+        // Number(number1) > 0 && number1 = Number(number1)-1;
+    });
+    
+</script>
+    <!-- 
+        getElementById 리턴타입은 HTMLElement로 반환
+
+        getElementsByTagName의 경우 배열의 형태를 띄고 있기는 하지만
+        유사 배열의 형태이기 때문에 
+        배열관련 함수를 사용할 수 없음
+     -->
+</body>
+</html>

@@ -9,6 +9,9 @@
 <body>
     <div id="container">
         <p>DOM 사용하기</p>
+
+        <!-- dispay : none  == 글자 숨기기 -->
+        <p style="display: none;">숨겨진 글씨</p>
     </div>
     <button id = "textBtn">TEXT</button>
     <button onclick="htmlFunc()" >HTML</button>
@@ -26,7 +29,8 @@
             let domText = document.getElementById('container').innerText;
             console.log('내용만 : ', domText);
             console.log('내용만2 : ', domVal.innerText);
-
+            // textContent는 앞뒤 태그를 모두 삭제( 스타일도 날려버려서 숨겨진 것도 보여준다 )
+            console.log('숨겨진 내용까지 :', domVal.textContent);
             domVal.innerText = 'JavaScript';
         })
 
