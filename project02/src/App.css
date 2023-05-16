@@ -1,0 +1,19 @@
+.item-border{
+
+  border : 11px solid bisque;
+
+  padding : 10px;
+  margin : 10px;
+  background-color: burlywood;
+  
+  
+  display : flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Memtable{
+  border : 11px solid black;
+
+}
