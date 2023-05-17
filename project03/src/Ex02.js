@@ -1,5 +1,6 @@
 import React from 'react'
 import picSrc from './img/likePic.gif'
+import LikeList from './components/LikeList'
 const Ex02 = () => {
 
 /*
@@ -17,8 +18,17 @@ React에서 내부 이미지 경로 지정하는 방법
 */
 
 
+/*
+ 실습 문제 !
+ 1) 하트 클릭시, 꽉 찬 하트로 변경
+ 2) 하트 클릭스 좋아요 1개로 변경
+ 3) 좋아요 상태에서 클릭시 원래대로 
+*/
   return (
-    <div>Ex02</div>
+    <div>
+      <img src = {picSrc}></img>
+      <LikeList></LikeList>
+    </div>
   )
 }
 
