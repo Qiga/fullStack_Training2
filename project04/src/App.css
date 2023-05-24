@@ -1,0 +1,34 @@
+.container{
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 3px solid pink;
+  padding: 10px;
+}
+.menu-container{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: royalblue;
+    font-size: 20px ;
+}
+
+.maincon{
+  padding : 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.tag{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: inherit;
+  flex-direction: inherit;
+}

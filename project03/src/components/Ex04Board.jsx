@@ -4,10 +4,6 @@ import React from 'react'
 const Ex04Board = ({path, player,score }) => {
 
 
-  if(score>=5){
-    alert(player + "승리");
-  }
-
   return (
     <div className = 'board-item'>
       <h3>{player}</h3>
